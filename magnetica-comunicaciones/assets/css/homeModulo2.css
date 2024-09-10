@@ -1,0 +1,140 @@
+
+/*--------------------------------------------------------------
+# Testimonios slider
+--------------------------------------------------------------*/
+
+
+.clients .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #F0F0F0;
+  opacity: 1;
+  border: 1px solid #941F20;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #941F20;
+}
+
+.espaciado {
+  margin-top: 15vh;
+}
+
+.behind-cameras-slider {
+  margin-bottom: 10rem;
+}
+
+.behind-cameras-img {
+  width: 100%;
+  height: 14rem;
+  overflow: hidden;
+}
+
+.behind-cameras-img img {
+  width: 100%;
+  height: 14rem;
+  overflow: hidden;
+}
+
+.zoom-imagen {
+  transition: transform .3s; 
+}
+
+.zoom-imagen:hover {
+  transform: scale(1.25); 
+}
+/*--------------------------------------------------------------
+# F.A.Q
+--------------------------------------------------------------*/
+.faq {
+  color: #313030;
+  overflow: hidden;
+}
+
+.faq .faq-list {
+  padding: 0 100px;
+}
+.faq .faq-direction{
+  display: flex;
+  justify-content: space-between; 
+}
+
+.faq .faq-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.faq .faq-list li {
+  padding: 30px;
+  background: white;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 25px;
+  
+}
+
+.faq .faq-list a {
+  display: block;
+  position: relative;
+  line-height: 24px;
+  padding: 0 30px;
+  outline: none;
+  cursor: pointer;
+  color: #941F20;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 549;
+}
+
+.faq .faq-list a:hover {
+  color: #990000;
+  text-decoration: none;
+}
+
+.faq .faq-list .icon-help {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  left: 30px;
+  color: #ffb8a1;
+}
+
+.faq .faq-list .icon-show,
+.faq .faq-list .icon-close {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0px 0px 30px;
+  font-size: 18px;
+}
+
+.faq .faq-list .icon-show {
+  display: none;
+}
+
+.faq .faq-list a.collapsed {
+  color: #343a40;
+}
+
+.faq .faq-list a.collapsed:hover {
+  color: #990000;
+}
+
+.faq .faq-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.faq .faq-list a.collapsed .icon-close {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .faq .faq-list {
+    padding: 0;
+  }
+}

@@ -1,0 +1,40 @@
+@import "./colors";
+
+.instalaciones-banner{
+    height: 450px;
+    background: linear-gradient(to bottom, transparent 65%, white),
+    url("../assets/images/Banners/Instalaciones.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+.instalaciones-text{
+    text-align: center;
+    width: 758px;
+}
+
+.background-servises{
+    background-image: url(../assets/images/Rectangle\ 44.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-y: 450px;
+    background-size: 100%;
+}
+
+@media (max-width:767px) {
+    .background-servises{
+        background: none;
+    }
+    .instalaciones-banner{
+        height: 250px;
+    }
+    .first-row{
+        margin-bottom: 0px !important;
+    }
+}
+
+@media (min-width:768px) {
+    .disapear-responsive{
+        display: none;
+    }
+}

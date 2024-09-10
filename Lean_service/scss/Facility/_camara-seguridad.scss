@@ -1,0 +1,15 @@
+@import "../colors";
+
+.camara-banner{
+    height: 450px;
+    background: linear-gradient(to bottom, transparent 65%, white),
+    url("../assets/images/Banners/Camaras.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .camara-banner {
+      height: 250px;
+    }
+  }

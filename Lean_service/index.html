@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Descripción y keywords -->
+    <meta
+      name="description"
+      content="Somos una empresa que le brinda personal para instalaciones, productos, insumos y ayuda para su empresa."
+    />
+    <meta
+      name="keywords"
+      content="PERU, PERÚ, LOGISTICA, LOGISTIC, FACILITY, INSTALACIONES, INSTALACION, ELECTRICA, CONSULTORIA, CONSULTING, SEGURIDAD, INCENDIOS, SISTEMA, SISTEMAS, INCENDIO, CAMARAS, SECURITY, EXPERIENCIA, EXPERIENCE, CUSTOMER, CLIENTE, GESTION, TRABAJO, PROCESOS, PROCESO, AYUDA, EQUIPO, PROTECCION, ARTICULOS, INSUMOS, LIMPIEZA, MOBILIARIO, OFICINA, HERRAMIENTAS, HERRAMIENTA, ARTICULO, INSUMO, FERRETERIA, PERSONAL, MATRICULADO, CAPACITADO"
+    />
+    <!-- Icon -->
+    <link rel="icon" type="image/ico" href="./assets/images/icon.ico" />
+    <title>Lean Service</title>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <header class="navbar__header">
+      <nav class="navbar">
+        <a class="nav__branding" href="#">
+          <img src="./assets/images/logo.svg" alt="logo" />
+        </a>
+        <ul class="nav__menu">
+          <li class="nav__item">
+            <a class="nav__link" href="./pages/nosotros.html">Nosotros</a>
+          </li>
+          <!-- Primer dropdown -->
+          <li class="nav__item">
+            <div class="nav__dropdown">
+              <div class="drop__container">
+                <span class="dropdown1">
+                  <p class="nav__dropText">Servicios</p>
+                  <span class="nav__arrowDrop"><</span>
+                </span>
+              </div>
+              <ul class="drop__menu">
+                <!-- Segundo dropdown 1-->
+                <li class="drop__item">
+                  <div class="nav__dropdown2">
+                    <div class="drop__container2">
+                      <p class="nav__dropText">Facility</p>
+                      <span class="nav__arrowDropF">></span>
+                    </div>
+                    <!-- Menú 1 -->
+                    <ul class="drop__menu2">
+                      <li class="drop__item">
+                        <a href="./pages/instalaciones.html" class="drop__link">
+                          Facility</a
+                        >
+                      </li>
+                      <hr />
+                      <li class="drop__item">
+                        <a
+                          href="./pages/Instalaciones/instalacionesElectricas.html"
+                          class="drop__link"
+                          >Eléctricas</a
+                        >
+                      </li>
+                      <hr />
+                      <li class="drop__item">
+                        <a
+                          href="./pages/Instalaciones/aires-acondicionados.html"
+                          class="drop__link"
+                          >Aires acondicionados</a
+                        >
+                      </li>
+                      <hr />
+                      <li class="drop__item">
+                        <a
+                          href="./pages/Instalaciones/camaras-seguridad.html"
+                          class="drop__link"
+                          >CCTV</a
+                        >
+                      </li>
+                      <hr />
+                      <li class="drop__item">
+                        <a
+                          href="./pages/Instalaciones/control-acceso.html"
+                          class="drop__link"
+                          >Seguridad y acceso</a
+                        >
+                      </li>
+                      <hr />
+                      <li class="drop__item">
+                        <a
+                          href="./pages/Instalaciones/sistema-incendios.html"
+                          class="drop__link"
+                          >Sistema contra incendios</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <hr />
+                <!-- Logistic Link -->
+                <li class="drop__item">
+                  <a
+                    class="nav__link logisticLink"
+                    href="./pages/logistica.html"
+                    >Logistic</a
+                  >
+                </li>
+                <hr />
+                <!-- Segundo dropdown 2 -->
+                <li class="drop__item">
+                  <div class="nav__dropdown2C">
+                    <div class="drop__container2C">
+                      <p class="nav__dropTextC">Consulting</p>
+                      <span class="nav__arrowDropC">></span>
+                    </div>
+                    <!-- Menú 2 -->
+                    <ul class="drop__menu2C">
+                      <li class="drop__item">
+                        <a href="./pages/consultoria.html" class="drop__link"
+                          >Consulting</a
+                        >
+                      </li>
+                      <hr />
+                      <li class="drop__item">
+                        <a
+                          href="./pages/Consulting/customer.html"
+                          class="drop__link"
+                          >Customer experience</a
+                        >
+                      </li>
+                      <hr />
+                      <li class="drop__item">
+                        <a
+                          href="./pages/Consulting/gestion.html"
+                          class="drop__link"
+                          >Gestion de procesos</a
+                        >
+                      </li>
+                      <hr />
+                      <li class="drop__item">
+                        <a
+                          href="/pages/Consulting/seguridad-salud.html"
+                          class="drop__link"
+                          >Seguridad y salud en el trabajo</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="./pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <!-- Fin del navbar -->
+    <!-- Contenido de la pagina -->
+    <main>
+      <!-- Titulo 1 -->
+      <section class="home__banner mb-5">
+        <div class="container">
+          <h1>Profesionales</h1>
+          <h2>que se preocupan por su empresa.</h2>
+          <p>
+            Optimizamos sus recursos generando procesos eficientes, para que
+            usted no tenga que pensar en nada.
+          </p>
+          <a class="alternative__hover" href="./pages/contacto.html">
+            <button class="boton">Contactanos</button>
+          </a>
+        </div>
+      </section>
+      <!-- Nuestros servicios -->
+      <section class="d-flex flex-column container mt-5" id="servicios">
+        <h1 class="title text-center">Nuestros servicios</h1>
+        <p class="paragraph text-center">
+          Su empresa va a poder contar con nuestros profesionales a cargo para
+          cualquier situación o actividad externa.
+        </p>
+        <div class="cardContainer">
+          <div class="custom__card1">
+            <img
+              src="../assets/images/CardImg/InstalacionesCard.jpg"
+              alt="Instalaciones"
+            />
+            <div>
+              <h5>Lean Facility</h5>
+              <p class="webText">
+                Contamos con personal técnico especializado y capacitado en
+                diversos sistemas para poder proveer instalaciones y mantenimiento
+                de diferentes tipos, a nivel industrial y residencial.
+              </p>
+              <p class="mobileText">
+                Personal técnico especializado y capacitado en diversos sistemas.
+              </p>
+              <a href="./pages/instalaciones.html">
+                <button>Ver más</button>
+              </a>
+            </div>
+          </div>
+          <div class="custom__card1">
+            <img src="./assets/images/CardImg/LogisticaCard.jpg" alt="..." />
+            <div>
+              <h5>Lean Logistic</h5>
+              <p>
+                Nos encargamos de conseguir y facilitar el acceso a una gran
+                variedad productos e insumos que su empresa, negocio y/o
+                emprendimiento requiera.
+              </p>
+              <a href="./pages/logistica.html">
+                <button>Ver más</button>
+              </a>
+            </div>
+          </div>
+          <div class="custom__card1">
+            <img src="./assets/images/CardImg/ConsultoriaCard.jpg" alt="..." />
+            <div>
+              <h5>Lean Consulting</h5>
+              <p>
+                Entendemos, analizamos y aplicamos mejoras y reformas en los
+                procesos de su empresa, tanto internos como externos.
+              </p>
+              <a href="./pages/consultoria.html">
+                <button>Ver más</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sobre Nosotros -->
+      <div class="sobreNosotrosMobile"></div>
+      <section class="container py-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-sm-7 col-12 woosh">
+            <img
+              class="img-fluid"
+              style="border-radius: 1rem"
+              src="./assets/images/CardImg/NosotrosCard.jpg"
+              alt="Sobre Nosotros"
+            />
+          </div>
+          <div class="col-1"></div>
+          <div class="col">
+            <div class="row">
+              <h1 class="title">Sobre nosotros</h1>
+            </div>
+            <div class="row">
+              <p>
+                Somos una empresa peruana especializada en el rubro de BPO,
+                dedicada a la gestión de Facilities, proporcionando la
+                atención especializada de profesionales y expertos puestos a
+                disposición de su empresa.
+              </p>
+            </div>
+            <div class="row py-4 px-3">
+              <a class="alternative__hover" href="./pages/nosotros.html">
+                <button class="boton">Conózcanos</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Carousel -->
+      <section class="container woosh" style="margin: 3rem auto 5rem auto">
+        <h1 class="text-center title" style="margin: 1rem">Clientes</h1>
+        <div
+          id="carouselExampleControls"
+          class="carousel slide customCarousel"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <!-- Ya que parece que no es posible hacer que muestre varias imagenes chiquitas para los logos, propongo hacer una foto con
+            varios logos que sea larga horizontalmente, asi da el pego. -->
+              <img
+                src="./assets/images/clientes/carrusel/clientes1.jpg"
+                class="d-block carousel__img"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/clientes/carrusel/clientes2.jpg"
+                class="d-block carousel__img"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/clientes/carrusel/clientes3.jpg"
+                class="d-block carousel__img"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel__leftbtn"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel__rightbtn"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- Clientes Mobile -->
+      <div class="clientes">
+        <h4 class="title text-center" style="margin-bottom: 1rem">
+          Nuestos clientes
+        </h4>
+        <div class="clientes__imgContainer">
+          <img src="./assets/images/clientes/bullon.png" alt="Bullon" />
+          <img src="./assets/images/clientes/GS confecciones.png" alt="GS" />
+          <img src="./assets/images/clientes/iluminatec.png" alt="IluminaTec" />
+          <img src="./assets/images/clientes/logo-mapfre.svg" alt="Mapfre" />
+          <img src="./assets/images/clientes/maycinwen.png" alt="Maycinwen" />
+          <img src="./assets/images/clientes/beltran.jpg" alt="beltran" />
+        </div>
+      </div>
+      <!-- Contactos -->
+      <div class="colorChanger">
+        <section class="contactanosHome">
+          <div class="container contactanosHome__div">
+            <h3 class="title">Contáctanos</h3>
+            <div>
+              <a target="_blank" href="https://wa.me/message/F532XEK2NGMHJ1">
+                <img
+                  class="contactanosHome__img"
+                  src="./assets/images/Redes/WhatsApp.svg"
+                  alt="WhatsApp"
+                />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/LeanServicePeru"
+              >
+                <img
+                  class="contactanosHome__img"
+                  src="./assets/images/Redes/Facebook.svg"
+                  alt="Facebook"
+                />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/leanserviceperu/"
+              >
+                <img
+                  class="contactanosHome__img"
+                  src="./assets/images/Redes/Instagram.svg"
+                  alt="Instagram"
+                />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/company/leanserviceperu/"
+              >
+                <img
+                  class="contactanosHome__img"
+                  src="./assets/images/Redes/LinkedIn.svg"
+                  alt="Linked In"
+                />
+              </a>
+              <!-- Lo de abajo hace que al clickar abrá correo para windows o gmail en el celular (supongo) -->
+              <a href="mailto:contacto.leanservice@gmail.com">
+                <img
+                  class="contactanosHome__img"
+                  src="./assets/images/Redes/Mail.svg"
+                  alt="Mail"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Footer -->
+    <div class="footer_background py-4">
+      <section class="container responsiveContainer">
+        <footer class="row row-cols-5">
+          <div class="col-xl-3 col-2 d-flex justify-content-center displayNone">
+            <a
+              href="#"
+              class="d-flex align-items-center mb-3 link-dark text-decoration-none"
+            >
+              <img
+                src="./assets/images/logo.svg"
+                alt="Logo"
+                style="height: 64px"
+              />
+            </a>
+          </div>
+
+          <div class="col-sm-2 col-2">
+            <h5 class="footer-title">Menú</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="./pages/nosotros.html" class="nav-link p-0 footer-text"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#servicios" class="nav-link p-0 footer-text">Servicios</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="./pages/contacto.html" class="nav-link p-0 footer-text"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-sm-2 col-3">
+            <h5 class="footer-title">Servicios</h5>
+            <ul class="nav flex-column footer-text">
+              <li class="nav-item mb-2">
+                <a
+                  href="./pages/instalaciones.html"
+                  class="nav-link p-0 footer-text"
+                  >Instalaciones</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="./pages/consultoria.html"
+                  class="nav-link p-0 footer-text"
+                  >Consultoría</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="./pages/logistica.html"
+                  class="nav-link p-0 footer-text"
+                  >Logística</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-sm-2">
+            <h5 class="footer-title">
+              Redes
+              <span class="displayNone" style="font-weight: 500">Sociales</span>
+            </h5>
+            <ul class="nav flex-column footer-text">
+              <li class="nav-item mb-2">
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/LeanServicePeru"
+                  class="nav-link p-0 footer-text"
+                  >Facebook</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/leanserviceperu/"
+                  class="nav-link p-0 footer-text"
+                  >Instagram</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/company/leanserviceperu/"
+                  class="nav-link p-0 footer-text"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-2 col-3">
+            <h5 class="footer-title">Contacto</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a
+                  href="mailto:contacto.leanservice@gmail.com"
+                  class="nav-link p-0 link-dark"
+                >
+                  contacto.leanservice@gmail.com
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  target="_blank"
+                  href="tel:+51 924 238 628"
+                  class="nav-link p-0 link-dark"
+                  >9 2423-8628</a
+                >
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </section>
+    </div>
+  </body>
+  <!-- Import Bootstrap y Jqery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+  <script src="index.js"></script>
+</html>

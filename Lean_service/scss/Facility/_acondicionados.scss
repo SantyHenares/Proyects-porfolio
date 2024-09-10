@@ -1,0 +1,52 @@
+@import "../colors";
+
+.acondicionados-banner{
+    height: 450px;
+    background: linear-gradient(to bottom, transparent 65%, white),
+    url("../assets/images/Banners/Aires.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+.text-container{
+    width: 60%;
+}
+
+.facility-presentacion{
+  .btn-pages {
+    width: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+    .facility-presentacion{
+      h1 {
+        font-size: 32px;
+      }
+      .subtitle-responsive{
+        font-size: 16px;
+      }
+      .text-container {
+        width: 100%;
+      }
+      .icon-simple{
+        display: none;
+      }
+      .paragraph{
+        padding-top: 12px;
+      }
+
+      .btn-pages{
+        width: 95%;
+        margin-top: 30px;
+      }
+    }
+    .acondicionados-banner {
+      height: 250px;
+    }
+  }
+@media (min-width:768px) {
+  .subtitle-responsive{
+    display: none;
+  }
+}
+  

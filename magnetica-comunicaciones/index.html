@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      content="Somos una agencia orientada a la comunicación de una forma integral, agrupando en un solo lugar lo todo lo que necesitas para que tu proyecto se expanda."
+      name="description"
+    />
+    <meta
+      content="Agencia, marketing,edición de video, Branding, comunicación marcas, diseño gráfico, copywriters, diseño web, redes sociales, estrategia y gestión"
+      name="keywords"
+    />
+    <title>Magnetica</title>
+
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+
+    <!-- Favicons -->
+    <link href="./assets/img/favicon-grande.png" rel="icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/cd33816f91.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/terceros/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/terceros/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/terceros/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/terceros/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/terceros/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/terceros/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore-compat.js"></script>
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/mainContact.css" />
+    <link rel="stylesheet" href="./assets/css/homemodulo1.css" />
+    <link rel="stylesheet" href="assets/css/homeModulo2.css" />
+  </head>
+
+  <body>
+    <!-- Pop Up -->
+    <div
+      class="modal fade"
+      id="MyModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="row">
+            <div class="col-lg-6 popup-imagen rounded-start"></div>
+            <div class="col-12 col-lg-6 py-5">
+              <div class="modal-body">
+                <h1 class="titles-h1 text-start fs-3 mb-5">
+                  Se parte de nuestra comunidad Magnética.
+                </h1>
+                <div class="mb-5">
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name-popup"
+                      placeholder="Nombre"
+                    />
+                  </div>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email-popup"
+                    placeholder="Tu correo"
+                  />
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    ¿Quieres recibir contenido gratis en tu correo?
+                  </label>
+                </div>
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                <button type="button" id="btn-popup" class="btn popup-button">
+                  Registrarme
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary popup-close"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <!-- Top bar -->
+      <div class="top-bar px-2 row">
+        <div class="icon col-3 d-flex justify-content-star">
+          <a
+            href="https://open.spotify.com/show/4fWLZjWRWkMEePF9f13qzJ?si=50b0498b90674e51"
+            target="_blank"
+            ><i class="bi bi-spotify"></i
+          ></a>
+          <a
+            href="https://www.tiktok.com/@sofiaaa_ferreyra?_t=8gknxcfsirV&_r=1"
+            target="_blank"
+            ><i class="bi bi-tiktok"></i
+          ></a>
+          <a href="https://www.youtube.com/@Sofiaaa_ferreyra" target="_blank"
+            ><i class="bi bi-youtube"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/magnetica.comunicacion/"
+            target="_blank"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/magn%C3%A9tica-comunicaci%C3%B3n-72b031297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
+        <h1 class="col-6">POR UNA VIDA MAGNÉTICA</h1>
+        <div class="icon col-3 d-flex justify-content-end">
+          <a class="rounded-0 m-0" href="https://sofiamagnetica.myshopify.com/"
+            ><i class="bi bi-cart-fill px-3"></i
+          ></a>
+          <a class="rounded-0" href=""
+            ><i class="bi bi-person-fill px-3"></i
+          ></a>
+        </div>
+      </div>
+      <!-- End Top Bar -->
+      <!-- ======= navbar ======= -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler my-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="icon d-flex justify-content-end">
+            <a href="https://sofiamagnetica.myshopify.com/"
+              ><i class="bi bi-cart-fill"></i
+            ></a>
+            <a href=""><i class="bi bi-person-fill"></i></a>
+          </div>
+          <div
+            class="collapse navbar-collapse flex-izquierda"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav my-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  SERVICIOS
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item m-0 px-2 pt-2 pb-0"
+                      href="./diseño-web.html"
+                      >Diseño Web</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item m-0 px-2 py-0"
+                      href="./diseño-grafico.html"
+                      >Identidad Visual</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item m-0 px-2 py-0"
+                      href="./redes-sociales.html"
+                      >Edición de Videos</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item m-0 px-2 py-0"
+                      href="./redes-sociales.html"
+                      >Para Redes Sociales</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item m-0 px-2 pt-0 pb-2"
+                      href="https://sofiamagnetica.myshopify.com/"
+                      >Shop express</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="https://sofiamagnetica.myshopify.com/"
+                  >SHOP</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  COMUNIDAD
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item m-0 px-2 pt-2 pb-0"
+                      href="https://www.youtube.com/@Sofiaaa_ferreyra"
+                      >YouTube</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item m-0 px-2 py-0"
+                      href="https://www.instagram.com/magnetica.comunicacion/"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item m-0 px-2 py-0"
+                      href="https://www.linkedin.com/in/magn%C3%A9tica-comunicaci%C3%B3n-72b031297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                      >LinkedIn</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item m-0 px-2 py-0"
+                      href="https://www.tiktok.com/@sofiaaa_ferreyra?_t=8gknxcfsirV&_r=1"
+                      >Tik tok</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item m-0 px-2 py-0"
+                      href="https://open.spotify.com/show/4fWLZjWRWkMEePF9f13qzJ?si=edff5fee&nd=1"
+                      >Podcast</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item m-0 px-2 pt-0 pb-2"
+                      href="https://elmundodesofia.substack.com"
+                      >Blog</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sobre-magnetica.html">MAGNÉTICA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End navbar -->
+    <!-- End Header -->
+    <main id="main">
+      <!-- ======= Banner ======= -->
+      <div
+        id="ImaIni-home"
+        class="ima-ini"
+        style="margin-bottom: 0px; height: 100vh !important"
+      ></div>
+      <!-- End Banner -->
+      <!-- ======= Todo lo que necesitas ======= -->
+      <section
+        class="container-fluid video-seccion row py-0 m-0"
+        data-aos="fade-up"
+      >
+        <div class="col-lg-7 bg-video-example">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/inNUZ4oCD9c?si=-DIeEtO-xpwrwYA0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="col-lg-5 video-textbox">
+          <h1>Todo lo que necesitas para una comunicación Magnética</h1>
+          <p class="fw-bold">Bienvenido a nuestra web.</p>
+          <p>
+            Un mundo lleno de servicios y herramientas diseñado para potenciar
+            la comunicación y el posicionamiento de proyectos con un enfoque
+            completamente integral.
+          </p>
+          <p>
+            Todo lo que necesites para crear tu marca de una forma #magnética,
+            ahora lo encontrás en un solo lugar.
+          </p>
+          <p>
+            Crea una comunidad en redes sociales, deslumbra con tu nueva
+            identidad visual, lleva la edición de videos a un nuevo nivel,
+            expande tu negocio con tu propia web y mucho más.
+          </p>
+        </div>
+      </section>
+      <!-- ======= End Todo lo que necesitas ======= -->
+
+      <!-- ======= Our Services Section ======= -->
+      <section id="services" class="services sections-bg">
+        <div class="container" data-aos="fade-up">
+          <div>
+            <h1 class="titles-h1">
+              <span class="underline">Nuestros Servicios</span>
+            </h1>
+          </div>
+
+          <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-play-btn"></i>
+                </div>
+                <h3 class="pe-4">Edición de videos</h3>
+                <div class="info">
+                  <p>
+                    Especial para creadores de contenido. Ya es hora de impactar
+                    en tus redes sociales.
+                  </p>
+                  <a
+                    href="./redes-sociales.html"
+                    class="readmore stretched-link"
+                    >Read more <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h3 class="pe-4">Diseño web</h3>
+                <p>
+                  Una página web es esencial para establecer tu presencia en
+                  linea y posicionarte en el mercado.
+                </p>
+                <a href="./diseño-web.html" class="readmore stretched-link"
+                  >Read more <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-easel"></i>
+                </div>
+                <h3 class="pe-4">Identidad visual</h3>
+                <p>
+                  El diseño que tu marca necesita para reflejar lo que te hace
+                  único.
+                  <br />
+                  <br />
+                </p>
+                <a href="./diseño-grafico.html" class="readmore stretched-link"
+                  >Read more <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-chat-heart"></i>
+                </div>
+                <h3 class="pe-4">Copywriting</h3>
+                <p>
+                  La clave que falta para el éxito de tu empresa. Mensajes
+                  originales y creativos que dejen una chispa en la mente de tus
+                  clientes
+                </p>
+                <a
+                  href="https://sofiamagnetica.myshopify.com/products/copywriters?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+                  class="readmore stretched-link"
+                  >Read more <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-wechat"></i>
+                </div>
+                <h3 class="pe-4">Redes sociales</h3>
+                <p>
+                  Potencia, aumenta tu audiencia y crea una comunidad fiel en
+                  redes.
+                  <br />
+                  <br />
+                </p>
+                <a href="./redes-sociales.html" class="readmore stretched-link"
+                  >Read more <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-chat-square-text"></i>
+                </div>
+                <h3 class="pe-4">Asesoría y Mentorías</h3>
+                <p>
+                  Agenda una reunión con Sofi y define el camino de la
+                  comunicación de tu proyecto.
+                  <br />
+                  <br />
+                </p>
+                <a
+                  href="https://wa.me/5493498444635"
+                  target="_blank"
+                  class="readmore stretched-link"
+                  >Read more <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <!-- End Service Item -->
+          </div>
+        </div>
+      </section>
+      <!-- End Our Services Section -->
+
+      <!-- ======= Segundo Banner ======= -->
+      <div
+        id="ImaMid"
+        class="ima-ini d-flex flex-column justify-content-center align-items-center"
+        style="margin-bottom: 0px"
+      ></div>
+      <!-- End Segundo Banner -->
+      <!-- ======= Testimonios ======= -->
+      <section id="clients" class="clients">
+        <div data-aos="fade-up">
+          <h1 class="titles-h1 espaciado">
+            <span class="underline">Testimonios</span>
+          </h1>
+        </div>
+        <div class="container" data-aos="fade-up">
+          <div class="testimonios-home-slider swiper">
+            <div class="swiper-wrapper behind-cameras-slider">
+              <div class="swiper-slide">
+                <div class="behind-cameras-img">
+                  <a
+                    href="https://www.youtube.com/embed/XGhLI4nWtig?si=LmaYBQ8T1R-RSrJb"
+                    data-gallery="testimonioGallery"
+                    class="portfolio-lightbox preview-link"
+                  >
+                    <img
+                      src="assets/img/testimonios/Testimonio-FrancoMai.png"
+                      class="zoom-imagen"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="behind-cameras-img">
+                  <a
+                    href="https://www.youtube.com/embed/cpTtByHtDnE?si=rqr2xHbqIrBuPU1U"
+                    data-gallery="testimonioGallery"
+                    class="portfolio-lightbox preview-link"
+                  >
+                    <img
+                      src="assets/img/testimonios/TestimonioCarenOrtiz.png"
+                      class="zoom-imagen"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="behind-cameras-img">
+                  <a
+                    href="https://www.youtube.com/embed/R_HynDfavIk?si=2MHO8cKjTUtn12ID"
+                    data-gallery="testimonioGallery"
+                    class="portfolio-lightbox preview-link"
+                  >
+                    <img
+                      src="assets/img/testimonios/Testimonio-Delia.png"
+                      class="zoom-imagen"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="behind-cameras-img">
+                  <a
+                    href="https://www.youtube.com/embed/XGhLI4nWtig?si=LmaYBQ8T1R-RSrJb"
+                    data-gallery="testimonioGallery"
+                    class="portfolio-lightbox preview-link"
+                  >
+                    <img
+                      src="assets/img/testimonios/Testimonio-FrancoMai.png"
+                      class="zoom-imagen"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- ======= End Testimonios ======= -->
+
+      <!-- ======= FAQ ======= -->
+      <section id="faq" class="faq section-bg">
+        <div data-aos="fade-up">
+          <h1 class="titles-h1">
+            <span class="underline">Preguntas frecuentes</span>
+          </h1>
+        </div>
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i>
+              <a
+                data-bs-toggle="collapse"
+                class="collapsed"
+                data-bs-target="#faq-list-1"
+              >
+                ¿Qué puedo esperar de Magnética?.
+                <i class="bx bx-chevron-down icon-show"></i>
+                <i class="bx bx-chevron-up icon-close"></i>
+              </a>
+              <div id="faq-list-1" class="collapse" data-bs-parent=".faq-list">
+                <p class="big-p">
+                  - Tener todo lo que tu empresa necesita en una sola agencia.
+                </p>
+                <p class="general-p">
+                  Somos el área de comunicación que le hace falta a su empresa,
+                  nuestra visión integral posibilita un trabajo en conjunto,
+                  profesional, en donde usted ahorra tiempo y se dedica a esa
+                  parte de su empresa que tanto le gusta.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i>
+              <a
+                data-bs-toggle="collapse"
+                data-bs-target="#faq-list-2"
+                class="collapsed"
+              >
+                ¿Brindan servicios para clientes internacionales?.
+                <i class="bx bx-chevron-down icon-show"></i>
+                <i class="bx bx-chevron-up icon-close"></i>
+              </a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p class="general-p">
+                  Si, estamos preparados para trabajar con proyectos a nivel
+                  mundial.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i>
+              <a
+                data-bs-toggle="collapse"
+                data-bs-target="#faq-list-3"
+                class="collapsed"
+              >
+                ¿Dónde encuentro contenido gratuito?.
+                <i class="bx bx-chevron-down icon-show"></i>
+                <i class="bx bx-chevron-up icon-close"></i>
+              </a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p class="general-p">
+                  Suscríbete a nuestra comunidad y enterate de todas las
+                  novedades. Podés encontrar todo el material en el menú
+                  “Comunidad”.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i>
+              <a
+                data-bs-toggle="collapse"
+                data-bs-target="#faq-list-4"
+                class="collapsed"
+              >
+                Quiero varios servicios, ¿Dónde puedo comprarlos?.<i
+                  class="bx bx-chevron-down icon-show"
+                ></i>
+                <i class="bx bx-chevron-up icon-close"></i>
+              </a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p class="general-p">
+                  Completá el formulario y uno de nuestros asesores se
+                  contactará con usted de inmediato para que podamos agendar una
+                  reunión personalizada.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- ======= End FAQ ======= -->
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact mb-5">
+        <div class="container" data-aos="fade-up">
+          <div class="section-header">
+            <h1 class="titles-h1">
+              <span class="underline">Atención personalizada</span>
+            </h1>
+          </div>
+          <div class="row gx-lg-0 gy-4">
+            <div class="col-lg-4">
+              <div
+                class="info-container d-flex flex-column align-items-center justify-content-center"
+              >
+                <div class="info-item d-flex">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h4>Ubicación:</h4>
+                    <p>Argentina</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div class="info-item d-flex">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h4>E-mail:</h4>
+                    <p>magnetica@gmail.com</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div class="info-item d-flex">
+                  <i class="bi bi-phone flex-shrink-0"></i>
+                  <div>
+                    <h4>Teléfono:</h4>
+                    <p>+54 9 3498 44-4635</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <a
+                  href="https://wa.me/5493498444635"
+                  target="_blank"
+                  class="info-item d-flex"
+                >
+                  <i class="bi bi-whatsapp flex-shrink-0"></i>
+                  <div>
+                    <h4>WhatsApp:</h4>
+                    <p>+54 9 3498 44-4635</p>
+                  </div>
+                </a>
+                <!-- End Info Item -->
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <form
+                action="send_email.php"
+                method="post"
+                role="form"
+                class="php-email-form"
+              >
+                <!-- Contenido del formulario de contacto -->
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Tu nombre"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="tele"
+                      id="tele"
+                      placeholder="Tu telefono"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    placeholder="Tu correo"
+                    required
+                  />
+                </div>
+
+                <div class="form-group mt-3">
+                  <div class="container mb-3">
+                    <div class="row text-start mb-1">
+                      <p>Por qué servicios te gustaria saber más:</p>
+                    </div>
+                    <div class="row text-start mb-1">
+                      <div class="col">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="Diseño Web"
+                            name="servicios[]"
+                            id="Servicio1"
+                          />
+                          <label class="form-check-label" for="Servicio1">
+                            Diseño Web
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="Identidad Visual"
+                            name="servicios[]"
+                            id="Servicio2"
+                          />
+                          <label class="form-check-label" for="Servicio2">
+                            Identidad Visual
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="Edición de video"
+                            name="servicios[]"
+                            id="Servicio3"
+                          />
+                          <label class="form-check-label" for="Servicio3">
+                            Edición de video
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="Diseño para redes sociales"
+                            name="servicios[]"
+                            id="Servicio4"
+                          />
+                          <label class="form-check-label" for="Servicio4">
+                            Diseño de redes sociales
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="Gestión para redes sociales"
+                            name="servicios[]"
+                            id="Servicio5"
+                          />
+                          <label class="form-check-label" for="Servicio5">
+                            Gestión de redes sociales
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="Copywriter"
+                            name="servicios[]"
+                            id="Servicio6"
+                          />
+                          <label class="form-check-label" for="Servicio6">
+                            Copywriter
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="Asesorías y Mentorías"
+                            name="servicios[]"
+                            id="Servicio7"
+                          />
+                          <label class="form-check-label" for="Servicio7">
+                            Asesorías y Mentorías
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="Otros"
+                            name="servicios[]"
+                            id="Servicio8"
+                          />
+                          <label class="form-check-label" for="Servicio8">
+                            Otros
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Su mensaje a sido enviado de forma correcta. ¡Gracias!
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit">Enviar Formulario</button>
+                </div>
+              </form>
+            </div>
+            <!-- End Contact Form -->
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="./index.html" class="logo d-flex align-items-center">
+              <span>SofiaFerreyra.inc</span>
+            </a>
+            <p class="py-4">
+              Por una vida Magnética. Ya no hay excusas para tomar las riendas y
+              crear un proyecto que cambie tu vida y la de muchos.
+            </p>
+            <div class="social-links d-flex mt-4">
+              <a
+                href="https://www.instagram.com/magnetica.comunicacion/"
+                target="_blank"
+                class="instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/magn%C3%A9tica-comunicaci%C3%B3n-72b031297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                class="linkedin"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a
+                href="https://open.spotify.com/show/4fWLZjWRWkMEePF9f13qzJ?si=50b0498b90674e51"
+                target="_blank"
+                class="spotify"
+                ><i class="bi bi-spotify"></i
+              ></a>
+              <a
+                href="https://www.tiktok.com/@sofiaaa_ferreyra?_t=8gknxcfsirV&_r=1"
+                target="_blank"
+                class="tiktok"
+                ><i class="bi bi-tiktok"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/@Sofiaaa_ferreyra"
+                target="_blank"
+                class="youtube"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Servicios</h4>
+            <ul>
+              <li><a href="./diseño-web.html">Diseño web</a></li>
+              <li><a href="./diseño-grafico.html">Identidad visual</a></li>
+              <li><a href="./redes-sociales.html">Edición de videos</a></li>
+              <li><a href="./redes-sociales.html">Para redes sociales</a></li>
+              <li>
+                <a href="https://sofiamagnetica.myshopify.com/"
+                  >Shop express
+                </a>
+              </li>
+              <li><a href="#contacto">Asesorías</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Home</h4>
+            <ul>
+              <li>
+                <a href="https://elmundodesofia.substack.com" target="_blank"
+                  >Blog</a
+                >
+              </li>
+              <li><a href="#">Comunidad</a></li>
+              <li><a href="./sobre-magnetica.html">Magnética</a></li>
+              <li><a href="#contacto">Atención personalizada</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+          >
+            <h4>Contáctanos</h4>
+            <p>
+              San Justo, Santa Fe<br />
+              Argentina <br /><br />
+              <strong>Teléfono:</strong> +54 9 3498 44-4635<br />
+              <strong>Email:</strong> magnetica@gmail.com<br />
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>SofiaFerreyra.inc</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">Designed by SofiaFerreyra.inc</div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Boton de regreso -->
+    <a
+      href="#"
+      class="back-to-top border d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+    <!-- End boton de regreso -->
+    <!-- Vendor JS Files -->
+    <script src="assets/terceros/aos/aos.js"></script>
+    <script src="assets/terceros/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/terceros/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/terceros/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/terceros/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/terceros/php-email-form/validate.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <!-- Firebase -->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+      import {
+        getFirestore,
+        collection,
+        addDoc,
+      } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-analytics.js";
+      const firebaseConfig = {
+        apiKey: "AIzaSyCUhEwQZBsJy2cQuDYONIOuGG2dR8CwQjg",
+        authDomain: "magnetica-comunicacion.firebaseapp.com",
+        projectId: "magnetica-comunicacion",
+        storageBucket: "magnetica-comunicacion.appspot.com",
+        messagingSenderId: "381110472660",
+        appId: "1:381110472660:web:1a729e2e225472a52b1041",
+        measurementId: "G-PZCDP5EKLK",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+      const analytics = getAnalytics(app);
+
+      function guardarDatos() {
+        const name = document.getElementById("name-popup").value;
+        const email = document.getElementById("email-popup").value;
+        const today = new Date();
+        const day = today.getDate();
+        const month = today.getMonth() + 1;
+        const year = today.getFullYear();
+
+        const fechaHoy = `${year}-${month < 10 ? "0" + month : month}-${
+          day < 10 ? "0" + day : day
+        }`;
+
+        if (!name || !email) {
+          alert("Completa ambos campos");
+        } else {
+          const datos = {
+            nombre: name,
+            email: email,
+          };
+          return addDoc(collection(db, fechaHoy), datos)
+            .then((docRef) => {
+              $("#MyModal").modal("hide");
+              return { name: name, email: email };
+            })
+            .catch((error) => {
+              Swal.showValidationMessage(
+                `Error al guardar los datos en Firebase: ${error}`
+              );
+            });
+        }
+      }
+      const registrarmeBtn = document.getElementById("btn-popup");
+      registrarmeBtn.addEventListener("click", guardarDatos);
+    </script>
+  </body>
+</html>

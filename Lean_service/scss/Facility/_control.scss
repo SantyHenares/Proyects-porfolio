@@ -1,0 +1,16 @@
+@import "../colors";
+
+.control-banner{
+    height: 450px;
+    background: linear-gradient(to bottom, transparent 65%, white),
+    url("../assets/images/Banners/Control.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+
+@media (max-width: 768px) {
+    .control-banner {
+      height: 250px;
+    }
+  }

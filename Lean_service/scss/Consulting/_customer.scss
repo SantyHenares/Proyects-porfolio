@@ -1,0 +1,43 @@
+@import "../colors";
+
+.customer-banner{
+    height: 450px;
+    background: linear-gradient(to bottom, transparent 65%, white),
+    url("../assets/images/Banners/Customer.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+.consulting-presentacion{
+    .btn-pages {
+        width: 380px;
+    }
+}
+
+@media (max-width: 768px) {
+    .customer-banner {
+      height: 250px;
+    }
+    .consulting-presentacion{
+        h1 {
+            font-size: 32px;
+          }
+          .subtitle-responsive{
+            font-size: 16px;
+          }
+          .text-container {
+            width: 100%;
+          }
+          .icon-simple{
+            display: none;
+          }
+          .paragraph{
+            padding-top: 12px;
+          }
+    
+          .btn-pages{
+            width: 95%;
+            margin-top: 30px;
+          }
+    }
+  }

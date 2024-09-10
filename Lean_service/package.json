@@ -1,0 +1,23 @@
+{
+  "name": "lean-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ecsinecs/lean-service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ecsinecs/lean-service/issues"
+  },
+  "homepage": "https://github.com/Ecsinecs/lean-service#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.1"
+  }
+}

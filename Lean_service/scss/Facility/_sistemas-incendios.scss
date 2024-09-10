@@ -1,0 +1,54 @@
+@import "../colors";
+
+.incendios-banner{
+    height: 450px;
+    background: linear-gradient(to bottom, transparent 65%, white),
+    url("../assets/images/Banners/Incendios.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+.incendios-subtitle{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: map-get($map: $colors, $key: secondary);
+}
+
+.incendios-strong{
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+  .incendios-banner {
+    height: 250px;
+  }
+  .incendios-subtitle{
+    font-size: 24px;
+  }
+}
+@media (max-width: 992px) {
+    .incendios-banner {
+      height: 250px;
+    }
+    .incendios-subtitle{
+      font-size: 24px;
+    }
+    .img-incendios{
+      max-width: 60%;
+      max-height: 220px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    .img-disapear-incendios{
+      display:none !important;
+    }
+  }
+  @media (min-width: 992px) {
+    .img-incendios{
+      display:none;
+    }
+  }

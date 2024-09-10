@@ -1,0 +1,35 @@
+@import "./colors";
+
+.footer_background{
+    background-color: #e6e6e6;
+    border-top: 2px solid #21a037;
+}
+
+.footer-servises{
+    background-color: #e6e6e6;
+    border-top: 2px solid #21a037;
+}
+
+.footer-title{
+    color: #21a037;
+}
+
+.footer-text{
+    color: #131E4A;
+}
+
+
+@media (max-width: 992px) {
+    .footer_background {
+        display: none;
+    }
+    .displayNone{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-servises{
+        display: none;
+    }
+}

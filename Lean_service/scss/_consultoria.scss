@@ -1,0 +1,29 @@
+.consultoria-banner{
+    height: 450px;
+    background: linear-gradient(to bottom, transparent 65%, white),
+    url("../assets/images/Banners/Consulting.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+.background-consultoria{
+    background-image: url(../assets/images/Rectangle\ 44.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-y: 150px;
+    background-size: 100%;
+}
+
+@media (max-width:870px) {
+    .background-consultoria{
+        background-position-y: 200px;
+    }
+}
+@media (max-width:768px) {
+    .consultoria-banner{
+        height: 250px;
+    }
+    .background-consultoria{
+        background:none;
+    }
+}    

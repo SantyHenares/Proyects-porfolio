@@ -1,0 +1,21 @@
+@import "./colors";
+
+.logistic-banner{
+    height: 450px;
+    background: linear-gradient(to bottom, transparent 65%, white),
+    url("../assets/images/Banners/Logistic.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+@media (max-width:768px) {
+    .logistic-banner{
+        height: 250px;
+    }
+    .logistic-btn{
+        .btn-pages{
+            width: 100%;
+            margin-top: 30px;
+        }
+    }  
+}

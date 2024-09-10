@@ -1,0 +1,15 @@
+@import "../colors";
+
+.gestion-banner{
+    height: 450px;
+    background: linear-gradient(to bottom, transparent 65%, white),
+    url("../assets/images/Banners/Gestion.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .gestion-banner {
+      height: 250px;
+    }
+  }
